@@ -1,6 +1,6 @@
 # Explicitly specify `jammy` to keep the Swift & Ubuntu images in sync.
 ARG BUILDER_IMAGE=swift:jammy
-ARG RUNTIME_IMAGE=ubuntu:jammy
+ARG RUNTIME_IMAGE=ubuntu:22.04
 
 # builder image
 FROM ${BUILDER_IMAGE} AS builder
